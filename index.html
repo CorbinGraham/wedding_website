@@ -22,6 +22,7 @@
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    </head>
 
    <body>
@@ -237,43 +238,55 @@
                                     <div class="section-tittle tittle-form text-center">
                                         <img src="assets/img/memories/section_tittle_flowre.png" alt="">
                                         <h2>Think you can come?</h2>
+                                        <h6>Don't worry, this is not a final RSVP!</h6>
                                     </div>
                                 </div>
                             </div>
-                            <form id="contact-form" action="#" method="POST">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-box mb-30">
-                                            <input type="text" name="name" placeholder="Name">
+                            <form class="gform" method="POST" data-email="corbin.graham2@gmail.com" action="https://script.google.com/macros/s/AKfycbyDvhCp07maYI_mJrU4gtkWrEOlaJRb_zA27DE-/exec">
+                                <div class="form-elements">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-box mb-30">
+                                                <fieldset class="pure-group">
+                                                    <input type="text" name="name" placeholder="Name">
+                                                </fieldset>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-box subject-icon mb-30">
-                                            <input type="Email" name="subject" placeholder="Email">
+                                        <div class="col-lg-12">
+                                            <div class="form-box subject-icon mb-30">
+                                                <fieldset class="pure-group">
+                                                    <input type="Email" id="email" name="email" placeholder="Email">
+                                                </fieldset>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 mb-30">
-                                        <div class="select-itms">
-                                            <select name="select" id="select2">
-                                                <option value="">1 Guest</option>
-                                                <option value="">2 Guests</option>
-                                                <option value="">3 Guests</option>
-                                                <option value="">4 Guests</option>
-                                                <option value="">5 Guests</option>
-                                                <option value="">6 Guests</option>
-                                            </select>
+                                        <div class="col-lg-12 mb-30">
+                                            <div class="select-itms">
+                                                <fieldset class="pure-group">
+                                                    <select name="guests" id="select2">
+                                                        <option value="">1 Guest</option>
+                                                        <option value="">2 Guests</option>
+                                                        <option value="">3 Guests</option>
+                                                        <option value="">4 Guests</option>
+                                                        <option value="">5 Guests</option>
+                                                        <option value="">6 Guests</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-box message-icon mb-30">
-                                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                        <div class="col-lg-12">
+                                            <div class="form-box message-icon mb-30">
+                                                <fieldset class="pure-group">
+                                                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                                </fieldset>
+                                            </div>
+                                        <div class="submit-info">
+                                            <button class="btn2" type="submit">Send</button>
                                         </div>
-                                    <div class="submit-info">
-                                            <button class="btn2" type="submit">R.S.V.P</button>
-                                    </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
+                            <script data-cfasync="false" src="form-submission-handler.js"></script>
                             <!-- Shape inner Flower -->
                             <div class="shape-inner-flower">
                                 <img src="assets/img/flower/form-smoll-left.png" class="top1" alt="">
